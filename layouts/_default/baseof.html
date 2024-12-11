@@ -17,6 +17,9 @@
 {{- print " dark" }}
 {{- end -}}
 " id="top">
+    <div id="loading-screen">
+        <div class="loader"></div>
+    </div>
     {{- partialCached "header.html" . .Page -}}
     <main class="main">
         {{- block "main" . }}{{ end }}
